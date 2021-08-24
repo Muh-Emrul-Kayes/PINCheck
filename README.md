@@ -1,12 +1,12 @@
 
 ## Inputs
 
-* A [Library Path](WorkDir/ip_lib/) Conating:
+* A [Library Path](Wor_kDir/ip_lib/) Conating:
   * LEF File
   * LIB File
   * Verilog File
 
-* [Output Directory](WorkDir/sample_op_dir)
+* [Output Directory](Work_Dir/sample_op_dir)
 
 
 ## Outputs
