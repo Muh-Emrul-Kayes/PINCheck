@@ -27,7 +27,7 @@ Note: You may choose to skip this step if you are doing a system-wide install fo
       Please DO NOT skip this step!
 ```console
 $ python -m virtualenv general
-$ .\general\Scripts\activate.bat
+$ .\general\Scripts\activate.ps1
 ```
 
 ### Step 3a: Install requirement.txt File
@@ -39,4 +39,9 @@ $ pip install -r ./requirement.txt
 ### Step 4: Run Project
 ```console
 $ python .\PinCheck.py
+```
+
+## Deactivate Python Virtual Environment
+```
+$ deactivate
 ```
