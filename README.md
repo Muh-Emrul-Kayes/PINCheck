@@ -41,7 +41,7 @@ $ pip install -r ./requirement.txt
 $ python .\PinCheck.py
 ```
 
-## Deactivate Python Virtual Environment
+## Deactivate Python virtualenv
 ```
 $ deactivate
 ```
