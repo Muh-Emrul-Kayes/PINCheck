@@ -27,7 +27,7 @@ Note: You may choose to skip this step if you are doing a system-wide install fo
       Please DO NOT skip this step!
 ```console
 $ python -m virtualenv general
-$ general\bin\activate
+$ .\general\Scripts\activate.bat
 ```
 
 ### Step 3a: Install requirement.txt File
