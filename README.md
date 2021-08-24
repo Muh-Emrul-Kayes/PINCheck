@@ -18,7 +18,7 @@
 
 ### Step 1: Open powershell and Clone the PINCheck source code to your local environment
 ```console
-$ git clone https://github.com/
+$ git clone https://github.com/Muh-Emrul-Kayes/PINCheck
 $ cd Work_Dir
 ```
 
