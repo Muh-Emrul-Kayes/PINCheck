@@ -38,5 +38,5 @@ $ pip install -r ./requirement.txt
 
 ### Step 4: Run Project
 ```console
-$ python .\PinCheck.py"
+$ python .\PinCheck.py
 ```
