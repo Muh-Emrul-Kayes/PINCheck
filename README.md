@@ -29,7 +29,7 @@ $ python -m virtualenv general
 $ .\general\Scripts\activate.ps1
 ```
 
-### Step 3a: Install requirement.txt File
+### Step 3: Install requirement.txt File
 ```console
 $ pip install -r ./requirement.txt
 ```
