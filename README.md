@@ -19,7 +19,7 @@
 ### Step 1: Open powershell and Clone the PINCheck source code to your local environment
 ```console
 $ git clone https://github.com/Muh-Emrul-Kayes/PINCheck
-$ cd .\PINCheck\Work_Dir\
+$ cd .PINCheck\Work_Dir\
 ```
 
 ### Step 2: Create a [Python virtualenv](https://docs.python.org/3/tutorial/venv.html)
@@ -27,7 +27,7 @@ Note: You may choose to skip this step if you are doing a system-wide install fo
       Please DO NOT skip this step!
 ```console
 $ python -m virtualenv general
-$ general/bin/activate
+$ general\bin\activate
 ```
 
 ### Step 3a: Install requirement.txt File
