@@ -19,7 +19,7 @@
 ### Step 1: Open powershell and Clone the PINCheck source code to your local environment
 ```console
 $ git clone https://github.com/Muh-Emrul-Kayes/PINCheck
-$ cd Work_Dir
+$ cd .\PINCheck\Work_Dir\
 ```
 
 ### Step 2: Create a [Python virtualenv](https://docs.python.org/3/tutorial/venv.html)
