@@ -20,16 +20,25 @@ gui_title = "GF Library QA"
 gui_icon = 'logo.ico'
 
 
-document_path = r"H:\Ulkasemi\Tkinter\TU1\pin_check\pin_check.pdf"
-script_path = r"H:\Ulkasemi\Tkinter\TU1\pin_check\pinCheckFE.py"
-report_path = r'H:\Ulkasemi\Tkinter\TU1\outputfile\FE_CHECK\report\pin_check.xlsx'
+current_path = os.getcwd()  # Current Working Directory
+
+script_path = os.path.abspath(f'{current_path}\pin_check\pinCheckFE.py')
+document_path = os.path.abspath(f'{current_path}\pin_check\pin_check.pdf')
+
+global report_path
+report_path = ''
+
+# Checking Script Path
+if not os.path.exists(script_path):
+    print(f'ERROR: pinCheckFE.py script not Found in {script_path}')
+    print(f'INFO: Please Place the pinCheckFE.py script in {script_path}')
+    sys.exit()
 
 
-current_path = os.getcwd()
-# path = os.path.abspath(os.path.join(path, os.pardir))  # parent path
-# print(path)
-# path = f'{path}\pin_check\pinCheckFE.py'
-# print(path)
+# Checking Document path
+if not os.path.exists(document_path):
+    print(f'WARNING: Documentation not Found in {script_path}')
+
 
 # ================================================================#
 #                       Main GUI Window                           #
@@ -169,6 +178,7 @@ pid = 1234
 
 def run_command(run_button, stop_button):
     global pid
+    global report_path
     cmd = create_cmd()
     print(cmd)
     p = subprocess.Popen(cmd.split(),
@@ -191,6 +201,7 @@ def run_command(run_button, stop_button):
     run_button.grid(row=6, column=2, pady=5)
 
     if p.returncode == 0:
+        report_path = os.path.abspath("FE_CHECK\\report\pin_check.xlsx")
         if os.path.exists(report_path):
             messagebox.showinfo(
                 title='Run Complte', message='Script has run successfully!')
@@ -250,16 +261,6 @@ def run(run_button, stop_button, entry_list_dic):
 
 def dummyCommand():
     pass
-
-
-'''
-psutil.pid_exists(pid):
-        p = psutil.Process(pid)
-        p.kill()
-'''
-
-global proc1, proc2
-proc1, proc2 = 1235, 1236
 
 
 def show(file_path):
