@@ -23,8 +23,7 @@ $ cd .\PINCheck\Work_Dir\
 ```
 
 ### Step 2: Create a [Python virtualenv](https://docs.python.org/3/tutorial/venv.html)
-Note: You may choose to skip this step if you are doing a system-wide install for multiple users.
-      Please DO NOT skip this step!
+Note: Please DO NOT skip this step!
 ```console
 $ python -m virtualenv general
 $ .\general\Scripts\activate.ps1
